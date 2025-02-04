@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 33% 98%;
+    --foreground: 20 40% 10%;
+    
+    --card: 30 33% 98%;
+    --card-foreground: 20 40% 10%;
+    
+    --popover: 30 33% 98%;
+    --popover-foreground: 20 40% 10%;
+    
+    --muted: 30 10% 90%;
+    --muted-foreground: 20 40% 40%;
+    
+    --border: 20 20% 85%;
+    --input: 20 20% 85%;
+    
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+.product-card {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+.nav-link {
+  @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full;
+}
