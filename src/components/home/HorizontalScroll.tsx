@@ -13,9 +13,7 @@ function HorizontalScroll() {
   useEffect(() => {
     const pin = gsap.fromTo(
       sectionRef.current,
-      {
-        translateX: 0,
-      },
+      { translateX: 0 },
       {
         translateX: "-175vw",
         ease: "none",
@@ -29,31 +27,26 @@ function HorizontalScroll() {
         },
       }
     );
-    return () => {
-      {/* A return function for killing the animation on component unmount */ }
 
+    return () => {
       pin.kill();
     };
   }, []);
 
   return (
-    <div ref={triggerRef}  className='overflow-hidden  mb-8'>
-      <div ref={sectionRef} className=' w-[300vw]  flex flex-row relative items-center space-x-10  '>
-        <div className='w-[50vw] h-[] shrink-0 rounded-3xl overflow-hidden ' >
-          <div className='w-full bg-red-700 h-[40vh] rounded-3xl' ></div>
-        </div>
-        <div className='w-[50vw] h-[] shrink-0 rounded-3xl overflow-hidden ' >
-          <div className='w-full bg-black h-[40vh] rounded-3xl' ></div>
-        </div>
-        <div className='w-[50vw] h-[] shrink-0 rounded-3xl overflow-hidden ' >
-          <div className='w-full bg-red-700 h-[40vh] rounded-3xl ' ></div>
-        </div>
-        <div className='w-[50vw] h-[] shrink-0 rounded-3xl overflow-hidden ' >
-          <div className='w-full bg-black h-[40vh] rounded-3xl' ></div>
+    <div className="mb-8">
+      <h2 className="text-3xl font-bold text-center mb-4">Our Story</h2>
+      <div ref={triggerRef} className="overflow-hidden">
+        <div ref={sectionRef} className="w-[300vw] flex flex-row relative items-center space-x-10">
+          {[1, 2, 3, 4, 5].map((item, index) => (
+            <div key={index} className="w-[50vw] shrink-0 rounded-3xl overflow-hidden">
+              <div className={`w-full h-[40vh] rounded-3xl ${index % 2 === 0 ? 'bg-red-700' : 'bg-black'}`}></div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default HorizontalScroll
+export default HorizontalScroll;

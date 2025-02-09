@@ -13,10 +13,15 @@ export default {
   theme: {
     extend: {
       animation: {
+        "move-infinite": "moveLeftToRight 8s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        moveLeftToRight: {
+          "0%": { transform: "translateX(-100%) rotate(0deg)" },
+          "100%": { transform: "translateX(100vw) rotate(360deg)" },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
@@ -25,14 +30,14 @@ export default {
       },
       maxWidth: {
         defaultWidth: "1220px",
-        InfiniteMaxWidth: "100%"
+        InfiniteMaxWidth: "100%",
       },
-      
-      fontSize:{
+
+      fontSize: {
         headingSize: "40px",
-        SubHeadingSize:"45px",
+        SubHeadingSize: "45px",
         textSize: "20px",
-        defaultText: "18px"
+        defaultText: "18px",
       },
       padding: {
         defaultPadding: "0px 10px",
