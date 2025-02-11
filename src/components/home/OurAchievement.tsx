@@ -8,9 +8,12 @@ import cupCake from "@/../public/home/cupcake.gif";
 function OurAchievement() {
     return (
         <div className='max-w-defaultWidth p-defaultPadding m-auto'>
-            <h1 className='text-[#c9ada7] text-center text-headingSize font-bold mb-10'>
+            <div className='mb-10 w-auto flex flex-col justify-center items-center' >
+            <h1 className='text-textTitle text-center text-headingSize font-bold'>
                 Our Achievement
             </h1>
+            <div className='border-t-4 border-borderHaddingColour w-[10%] h-[10px]' ></div>
+            </div>
             <div className='grid grid-cols-1 py-4 md:grid-cols-2 lg:grid-cols-4 gap-4 content-center items-center' >
                 <div className=" flex flex-col gap-4 justify-center items-center ">
                     <figure className="w-[100px]">

@@ -51,28 +51,22 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card className=" flex justify-between items-center gap-4 flex-row " >
-            <div>
-              <CardTitle>{item.title}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
-            </div>
-            <div>
-              <div
-                className="h-full w-full relative dark:bg-black"
-              >
-                image
-                {/* <Image
-                  alt="image"
-                  className={cn(
-                    "h-full w-full object-cover scale-[1.15]",
-                  )}
-                  // width="1000"
-                  // height="1000"
-                  src={item.imageUrl}
-                /> */}
+          <Link href={item.link} >
+            <Card className="flex justify-between items-center gap-4 flex-row group">
+              <div>
+                <CardTitle>{item.title}</CardTitle>
+                <CardDescription>{item.description}</CardDescription>
               </div>
-            </div>
-          </Card>
+              <div className="relative overflow-hidden group-hover:scale-125 transition ease-in-out duration-8000">
+                <Image
+                  alt="image"
+                  width={120}
+                  height={120}
+                  src={item.imageUrl}
+                />
+              </div>
+            </Card>
+          </Link>
         </div>
       ))}
     </div>
@@ -107,7 +101,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn(" text-[#e77132] uppercase font-bold tracking-wide text-lg mt-4", className)}>
+    <h4 className={cn(" text-textHeadingColor uppercase font-bold tracking-wide text-lg mt-4", className)}>
       {children}
     </h4>
   );

@@ -4,7 +4,12 @@ function OurStory() {
     return (
         <div className='max-w-defaultWidth mb-9 p-defaultPadding flex flex-col gap-6 m-auto' >
             {/* <HorizontalScroll /> */}
-            <h2 className='text-[#c9ada7] text-center text-headingSize font-bold ' > Our Story </h2>
+            <div className=' w-auto flex flex-col justify-center items-center' >
+                <h1 className='text-textTitle text-center text-headingSize font-bold'>
+                    Our Story
+                </h1>
+                <div className='border-t-4 border-borderHaddingColour w-[10%] h-[10px]' ></div>
+            </div>
             <div className=' grid grid-cols-1 lg:grid-cols-2 gap-4 content-center items-center ' >
                 <div className=' uppercase text-headingSize font-semibold '>
                     From humble beginnings <br />
