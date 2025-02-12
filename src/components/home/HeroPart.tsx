@@ -1,5 +1,8 @@
 import React from 'react';
 import homeBanner from "@/../public/home/homeBanner.jpg";
+import b1 from "@/../public/b1.jpg";
+import b2 from "@/../public/b2.jpg";
+import b3 from "@/../public/b3.jpg";
 import { FlipWords } from './FlipWords';
 import { Carousel } from '../ui/carousel';
 

@@ -13,7 +13,7 @@ function OurStory() {
             <div className=' grid grid-cols-1 lg:grid-cols-2 gap-4 content-center items-center ' >
                 <div className=' uppercase text-headingSize font-semibold '>
                     From humble beginnings <br />
-                    to <span className='text-[#B12028]' > atulya parivar </span>
+                    to <span className='text-[#B12028]' > Vili Family </span>
                 </div>
                 <div>
                     <span className=' font-semibold ' >

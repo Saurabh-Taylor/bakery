@@ -148,7 +148,7 @@ export function Carousel({ slides, interval = 3000 }: CarouselProps) {
 
   return (
     <div
-      className="relative w-full h-full overflow-hidden"
+      className="relative w-full h-full overflow-hidden rounded-2xl"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
