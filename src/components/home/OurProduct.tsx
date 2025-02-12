@@ -6,42 +6,42 @@ const OurProductItems = [
         id: 1,
         title: "Cakes",
         description: "22+ varieties",
-        link: "/cake",
+        link: "/allproducts/cake",
         imageUrl: "/allImage/cake.png"
       },
       {
         id: 2,
         title: "savories",
         description: "10+ varieties",
-        link: "/cake",
+        link: "/allproducts/savories",
         imageUrl: "/allImage/savories.png"
       },
       {
         id: 3,
         title: "cup cake",
         description: "50+ varieties",
-        link: "/cake",
+        link: "/allproducts/cupCake",
         imageUrl: "/allImage/cupCake.png"
       },
       {
         id: 4,
         title: "namkin",
         description: "20+ Namkin",
-        link: "/cake",
+        link: "/allproducts/namkin",
         imageUrl: "/allImage/namkin.png"
       },
       {
         id: 5,
         title: "sweet",
         description: "5+ sweet",
-        link: "/cake",
+        link: "/allproducts/sweet",
         imageUrl: "/allImage/sweet.png"
       },
       {
         id: 6,
         title: "cookies",
         description: "5+ varieties",
-        link: "/cake",
+        link: "/allproducts/cookies",
         imageUrl: "/allImage/cookies.png"
       },
 ]

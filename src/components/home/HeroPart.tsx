@@ -9,36 +9,40 @@ import { Carousel } from '../ui/carousel';
 
 
 const slides = [
-    {
-      title: "string",
-      button: "string",
-      src: "/home/home-banner1.jpg",
-    },
-    {
-      title: "string",
-      button: "string",
-      src: "/home/home-banner2.jpg",
-    },
-    {
-      title: "string",
-      button: "string",
-      src: "/home/home-banner3.jpg",
-    },
-  ]
-  
-  const words = [" Cake", " Cupcake", " Pastry"]
+  {
+    title: "string",
+    button: "string",
+    src: "/home/home-banner1.jpg",
+  },
+  {
+    title: "string",
+    button: "string",
+    src: "/home/home-banner2.jpg",
+  },
+  {
+    title: "string",
+    button: "string",
+    src: "/home/home-banner3.jpg",
+  },
+]
+
+const words = [" Cake", " Cupcake", " Pastry"]
 
 function HeroPart() {
-    return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 content-center items-center mb-5 max-w-defaultWidth p-defaultPadding m-auto'>
-            <div className='col-span-1'>
-          <FlipWords words={words} />
-            </div>
-            <div className='col-span-1'>
-          <Carousel slides={slides} />
-            </div>
-        </div>
-    )
+  return (
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 content-center items-center mb-5 max-w-defaultWidth p-defaultPadding m-auto'>
+      <div className='col-span-1 font-bold text-[28px] text-[#B79652] '>
+        {/* <FlipWords words={words} /> */}
+
+        Freshly Baked, Lovingly Made
+        <br />
+        From our oven to your table, taste the difference in every bite.
+      </div>
+      <div className='col-span-1'>
+        <Carousel slides={slides} />
+      </div>
+    </div>
+  )
 }
 
 export default HeroPart
