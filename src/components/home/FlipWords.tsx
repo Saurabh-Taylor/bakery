@@ -62,6 +62,7 @@ export const FlipWords = ({
         )}
         key={currentWord}
       >
+        We have 
         {/* edit suggested by Sajal: https://x.com/DewanganSajal */}
         {currentWord.split(" ").map((word, wordIndex) => (
           <motion.span
@@ -73,7 +74,7 @@ export const FlipWords = ({
               duration: 0.3,
             }}
             className="inline-block whitespace-nowrap"
-          >We have  
+          >
             {word.split("").map((letter, letterIndex) => (
               <motion.span
                 key={word + letterIndex}

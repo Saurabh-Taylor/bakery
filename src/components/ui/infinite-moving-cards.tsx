@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 import { DirectionAwareHover } from "./direction-aware-hover";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -16,7 +17,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
-    src: any;
+    src: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -90,7 +91,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[150px] h-[150px] overflow-hidden flex justify-center items-center max-w-full relative rounded-[50%] border  flex-shrink-0 border-black px-8 py-6 "
+            className="w-[150px] h-[150px] overflow-hidden flex justify-center items-center max-w-full relative rounded-[50%] border  flex-shrink-0 border-black  "
             // style={{
             //   background:
             //     // "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -98,8 +99,7 @@ export const InfiniteMovingCards = ({
             key={item.id}
           >
             <blockquote>
-              <DirectionAwareHover children="hello" imageUrl={item.src} />
-
+              <Image src={item.src} alt="" width={200} height={200} />
             </blockquote>
           </li>
         ))}

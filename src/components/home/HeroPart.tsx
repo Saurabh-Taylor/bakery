@@ -4,25 +4,26 @@ import { FlipWords } from './FlipWords';
 import { Carousel } from '../ui/carousel';
 
 
+
 const slides = [
     {
       title: "string",
       button: "string",
-      src: homeBanner,
+      src: "/home/home-banner1.jpg",
     },
     {
       title: "string",
       button: "string",
-      src: homeBanner,
+      src: "/home/home-banner2.jpg",
     },
     {
       title: "string",
       button: "string",
-      src: homeBanner,
+      src: "/home/home-banner3.jpg",
     },
   ]
   
-  const words = ["Cake", "Cupcake", "Pastry"]
+  const words = [" Cake", " Cupcake", " Pastry"]
 
 function HeroPart() {
     return (

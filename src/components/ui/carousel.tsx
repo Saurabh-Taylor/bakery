@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useId } from "react";
 interface SlideData {
   title: string;
   button: string;
-  src: any;
+  src: string;
 }
 
 interface SlideProps {
@@ -94,13 +94,13 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             opacity: current === index ? 1 : 0.5,
           }}
           alt={title}
-          src={src.src}
+          src={src}
           onLoad={imageLoaded}
           loading="eager"
           decoding="sync"
         />
         {current === index && (
-          <div className="absolute inset-0 bg-black/30 transition-all duration-2000" />
+          <div className="absolute inset-0  transition-all duration-2000" />
         )}
       </div>
     </li>
