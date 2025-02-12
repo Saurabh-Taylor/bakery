@@ -1,12 +1,10 @@
-
 import { ProductGallery } from '@/components/allProduct/ProductGallery'
 import { ProductInfo } from '@/components/allProduct/ProductInfo'
 import { RelatedProducts } from '@/components/allProduct/RelatedProducts'
-import React, { useEffect } from 'react'
 import { cakeDetails, ICardDetails } from '../page'
 
 async function SingleProduct({ params }: { params: { cakeId: string } }) {
-    const paramsId = await (params).cakeId;
+    const { cakeId: paramsId } = await params
 
 
     const details = cakeDetails.find((details: ICardDetails) => details.id === Number(paramsId))

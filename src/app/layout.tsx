@@ -24,9 +24,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Best Bakery in Sofia Fresh Cakes , Pastries & More - Vili Bakery",
   description: "Baked to Perfection, Served with Love",
-  icons:{
-    icon:"/favicon.ico"
-  }
+  // icons:{
+  //   icon:"/favicon.ico"
+  // }
 };
 
 export default function RootLayout({
